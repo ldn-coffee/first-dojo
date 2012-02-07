@@ -10,6 +10,8 @@
 
 <script type="text/coffeescript">
 alert "Hello Coffeescript fan!"
+
+console.log $('#name').val()
 </script>
 
 <link rel="stylesheet" href="standard.css"/>
@@ -20,7 +22,7 @@ alert "Hello Coffeescript fan!"
 
 	<p>Create an alert that greets the name in the box below.</p>
 
-	<p><input id="name" type="text"></p>
+	<p><input id="name" type="text" value="Joe"></p>
 	<p><button id="greet">Greet</button></p>
 </body>
 </html>
