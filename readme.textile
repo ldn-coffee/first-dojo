@@ -1,0 +1,5 @@
+h1. First London Dojo
+
+The idea of this repository is to provide some structured problems to help guide people through their first Coffeescript coding.
+
+This repository is meant to be cloned or forked and then run locally. All required scripts are included and the Coffeescript is compiled by the browser via script tags with the type "text/coffeescript".
