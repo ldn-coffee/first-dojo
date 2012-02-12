@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+<script src="jquery.min.js"></script>
+<script src="coffee-script.js"></script>
+
+<script type="text/coffeescript">
+
+$ ->
+	selectPixel = -> Math.floor(Math.random() * 401)
+	chooseIntensity = (position) ->
+		if position >= 200
+			position
+		else
+			100
+
+	canvas = $('#picture')[0].getContext("2d")
+
+	draw = ->
+		x = selectPixel()
+		y = selectPixel()
+
+		red = chooseIntensity(x)
+		blue = chooseIntensity(y)
+
+		canvas.fillStyle = "rgb(#{red}, 0, #{blue})"
+		canvas.fillRect x, y, 3, 3
+
+		setTimeout draw, 100
+
+
+	draw()
+</script>
+
+<link rel="stylesheet" href="standard.css"/>
+</head>
+
+<body>
+	<h1>Can you guess what it is yet?</h1>
+
+	<p>Changing the drawing function for this picture.</p>
+
+	<canvas id="picture" height="400" width="400"></canvas>
+</body>
+</html>
