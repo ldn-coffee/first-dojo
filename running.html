@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+<script src="jquery.min.js"></script>
+<script src="coffee-script.js"></script>
+
+<script type="text/coffeescript">
+
+$ ->
+	canvas = $('#game')[0].getContext("2d")
+
+	draw = ->
+		
+		canvas.fillStyle = "rgb(0, 0, 255)"
+		canvas.fillRect 0, 0, 600, 400
+
+		canvas.fillStyle = "rgb(255, 0, 0)"
+		canvas.fillRect 0, 200, 600, 200
+
+		canvas.fillStyle = "rgb(0, 0, 0)"
+		canvas.fillRect 280, 180, 20, 20
+
+		canvas.fillStyle = "rgb(255, 255, 255)"
+		canvas.fillRect 390, 190, 10, 10
+		canvas.fillRect 490, 190, 10, 10
+
+		canvas.fillStyle = "rgb(255, 200, 0)"
+		canvas.fillRect 550, 20, 40, 40
+
+	gameloop = ->
+		draw()
+
+		setTimeout gameloop, 25
+	
+	handleKeyDown = (event) ->
+		console.log "Jump!"
+
+	window.addEventListener 'keydown', handleKeyDown, true
+	gameloop()
+
+</script>
+
+<link rel="stylesheet" href="standard.css"/>
+</head>
+
+<body>
+	<h1>Running game</h1>
+
+	<p>Create a game where the main character is running (ala <a href="http://www.adamatomic.com/canabalt/">Canabult</a>. The character can only jump over obstacles and dies if they hit them. The runner gets progressively faster and jumps further as they travel faster.</p>
+
+	<p>The player gets points for the distance they travel and the speed they go.</p> 
+
+	<canvas id="game" width="600" height="400">
+	</canvas>
+</body>
+</html>
