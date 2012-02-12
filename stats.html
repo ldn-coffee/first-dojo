@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+<script src="jquery.min.js"></script>
+<script src="coffee-script.js"></script>
+
+<script type="text/coffeescript">
+
+d6 = () -> 1 + Math.floor(Math.random() * 6)
+
+console.log d6()
+
+stats = 
+	str : 0
+	dex : 0
+	con : 0
+	int : 0
+	wis : 0
+	cha : 0
+
+
+console.log stats
+</script>
+
+<link rel="stylesheet" href="standard.css"/>
+</head>
+
+<body>
+	<h1>Character building</h1>
+
+	<p>A common way of creating characters for D&amp;D and similar games is to roll four six-sided dice and discard the lowest value.</p>
+
+	<p>E.g. 3, 6, 2, 3 would give a value of 12.</p>
+
+	<p>Generate a character object for the attributes below and display the values in the table below.</p>
+
+	<table>
+		<tr>
+			<th>Strength</th>
+			<td id="str"></td>
+		</tr>
+		<tr>
+			<th>Dexterity</th>
+			<td id="dex"></td>
+		</tr>
+		<tr>
+			<th>Constitution</th>
+			<td id="con"></td>
+		</tr>
+		<tr>
+			<th>Intelligence</th>
+			<td id="int"></td>
+		</tr>
+		<tr>
+			<th>Wisdom</th>
+			<td id="wis"></td>
+		</tr>
+		<tr>
+			<th>Charisma</th>
+			<td id="cha"></td>
+		</tr>
+</body>
+</html>
