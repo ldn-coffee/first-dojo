@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+<script src="jquery.min.js"></script>
+<script src="coffee-script.js"></script>
+
+<script type="text/coffeescript">
+house = 
+	1:
+		name: "The hall"
+		description: "Gloomy and foreboding, full of wood panelling."
+		exits: [2, 3]
+	2:
+		name: "The kitchen"
+		description: "Cold and clinically clean, moonlight gleams of the white tiling."
+		exits: [1, 4]
+	3:
+		name: "The pantry"
+		description: "Cool and stuffy. Mysterious bags and packages line every shelf."
+		exits: [2]
+	4:
+		name: "Drawing room"
+		description: "Huge windows let light into a wood-panelled room full of bookcases and comfy leather chairs."
+		exits: [1]
+
+
+console.log house
+</script>
+
+<link rel="stylesheet" href="standard.css"/>
+</head>
+
+<body>
+	<h1>Adventure game</h1>
+
+	<p>Create a client-side adventure game where the player can move between the rooms of a mysterious mansion.</p>
+
+	<section id="current-room">
+		<header><h1>Room name</h1></header>
+
+		<blockquote>Room description</blockquote>
+		
+	</section>
+
+	<section id="interaction">
+	<p> Exits are: </p>
+	</section>
+</body>
+</html>
