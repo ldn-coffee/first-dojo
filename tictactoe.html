@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+<script src="jquery.min.js"></script>
+<script src="coffee-script.js"></script>
+
+<script type="text/coffeescript">
+
+</script>
+
+<link rel="stylesheet" href="standard.css"/>
+<link rel="stylesheet" href="tictactoe.css"/>
+</head>
+
+<body>
+	<h1>Tic Tac Toe</h1>
+
+	<p>It may not be Global Thermonuclear War but who is winning in these games?</p>
+
+	<section class="legend">
+	<h2>Legend</h2>
+	<dl>
+		<dt>-</dt>
+		<dd>Space not taken</dd>
+		<dt>x</dt>
+		<dd>Taken by Crosses</dd>
+		<dt>o</dt>
+		<dd>Noughts 4TW!</dd>
+	</dl>
+	</section>
+
+	<h2>Games</h2>
+
+	<section class="game">
+
+	<table id="game1" class="tictactoe">
+		<tr>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td>x</td>
+			<td>o</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>o</td>
+			<td>o</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td class="answer" colspan="3"></td>
+		</tr>
+	</table>
+
+	<p>Should be x...</p>
+
+	</section>
+
+	<section class="game">
+
+	<table id="game2" class="tictactoe">
+		<tr>
+			<td>x</td>
+			<td>x</td>
+			<td>o</td>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td>o</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>o</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td class="answer"></td>
+		</tr>
+	</table>
+
+	<p>Should be o...</p>
+
+	</section>
+
+	<section class="game">
+
+	<table id="game3" class="tictactoe">
+		<tr>
+			<td>o</td>
+			<td>x</td>
+			<td>o</td>
+		</tr>
+		<tr>
+			<td>o</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td>x</td>
+			<td>o</td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td class="answer"></td>
+		</tr>
+	</table>
+
+	<p>Should be a draw...</p>
+
+	</section>
+
+	<section class="game">
+
+	<table id="game4" class="tictactoe">
+		<tr>
+			<td>x</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td>o</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td class="answer"></td>
+		</tr>
+	</table>
+
+	<p>No-one has won yet.</p>
+
+	</section>
+</body>
+</html>

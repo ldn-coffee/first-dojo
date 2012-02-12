@@ -1,0 +1,18 @@
+
+.tictactoe {
+	font-family: monospace;
+	font-size: 14px;
+}
+
+.game {
+	display: inline-block;
+	margin-right: 2em;
+}
+
+.legend {
+	margin: 1em;
+	float: right;
+}
+dt {
+	font-family: monospace;
+}
