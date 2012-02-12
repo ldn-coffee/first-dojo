@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+<script src="jquery.min.js"></script>
+<script src="coffee-script.js"></script>
+
+<script type="text/coffeescript">
+
+</script>
+
+<link rel="stylesheet" href="standard.css"/>
+
+</head>
+
+<body>
+	<h1>Story creator</h1>
+
+	<p>Given the elements the user supplies below generate a story with a beginning, a middle with some jeopardy and an ending.</p>
+
+	<ul class="form">
+		<li><label>Protagonist's name <input id="name" type="text"/></label></li>
+		<li><label>Useful object <input id="object" type="text"/></label></li>
+		<li><label>Companion's name <input id="companion" type="text"/></label></li>
+		<li><label>Villain's name <input id="villain" type="text"/></label></li>
+		<li><button id="start-story">Create the story</button></li>
+	</ul>
+
+	<h2>Once upon a time...</h2>
+	<article id="story">
+	<p>The story goes here</p>
+	</article>
+</body>
+</html>

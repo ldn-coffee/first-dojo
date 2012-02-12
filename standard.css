@@ -5,3 +5,7 @@ body {
 	margin-right: auto;
 	font-family: sans-serif;
 }
+
+.form {
+	list-style: none;
+}
