@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+<script src="jquery.min.js"></script>
+<script src="coffee-script.js"></script>
+
+<script type="text/coffeescript">
+
+</script>
+
+<link rel="stylesheet" href="standard.css"/>
+
+<style>
+	body {
+		width: 50%;
+		margin-right: auto;
+		margin-left: 0;
+	}
+	#score {
+		position: fixed;
+		right: 10%;
+		font-size: 400%;
+		top : 6%;
+		color: green;
+	}
+
+	#word {
+		position: fixed;
+		right: 20%;
+		font-size: 300%;
+		top : 2%;
+		background-color: white;
+		color: orange;
+		padding: 1em;
+		letter-spacing: 0.2em;
+	}
+
+	#players-panel {
+		position: fixed;
+		background-color: white;
+		color: black;
+		right: 25%;
+		top : 50%%;
+	}
+
+</style>
+</head>
+
+<body>
+	<h1>Counterspell</h1>
+
+	<p>Generate a random sequence of eight letters. Give the player two seconds to type in the letters. If they type them correctly they get one point for each letter. If they get it wrong they lose one point for <em>each wrong letter</em>.</p>
+
+	<h2>Bonus exercise</h2>
+
+	<p>Grow or shrink the size of the &quot;word&quot; according to whether the player got the last word right or not.</p>
+
+	<p id="score">0</p>
+	<p id="word">lulzzors</p>
+	<div id="players-panel">
+	<p><input id="name" type="text" /></p>
+	<p><button id="greet">Counterspell!</button></p>
+	</div>
+</body>
+</html>
