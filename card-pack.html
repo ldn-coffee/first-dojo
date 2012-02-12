@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+<script src="jquery.min.js"></script>
+<script src="coffee-script.js"></script>
+
+<script type="text/coffeescript">
+
+values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
+
+console.log values
+
+suits = [
+	"C"
+	"D"
+	"H"
+	"S"
+	]
+
+console.log suits
+</script>
+
+<link rel="stylesheet" href="standard.css"/>
+</head>
+
+<body>
+	<h1>Card pack</h1>
+
+	<p>Generate a list of all the cards in a conventional deck of cards in the format <em>value</em> <em>suit</em>.</p>
+
+	<ul id="deck">
+	</ul>
+
+	<h2>Bonus exercise</h2>
+
+	<p>Sorting playing cards can be tricky. Random select five cards from your pack and sort them according to the following rules.</p>
+
+	<ul>
+		<li>Black trumps red</li>
+		<li>Diamonds trump Hearts</li>
+		<li>Spades trump Clubs</li>
+		<li>Ace is high</li>
+	</ul>
+
+	<ol class="hand">
+	</ol>
+</body>
+</html>
